@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Meet the Creator</title>
+
+    <style> 
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/da/11/eeda119d767ca3d2d818697fe28b2062.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Navigation Bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: rgb(7, 20, 123);
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        } 
+        
+        ul li:last-child {
+            float: right;
+        }
+
+        ul li a:hover {
+            background-color: rgb(240, 239, 239);
+        }
+
+        /* Main Section */
+        .main {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #top {
+            font-weight: bolder;
+            font-size: 20px;
+            color: rgb(7, 20, 123);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(7, 20, 123);
+            background-color: white;
+            border-radius: 20px;
+            display: block;
+            width: fit-content;
+            margin: 15px auto 0 auto;
+            padding: 10px 25px;
+        }
+
+        /* Creator Card */
+        #creator-card {
+            background-color: rgba(240, 239, 239, 0.95);
+            width: 700px;
+            max-width: 95%;
+            padding: 25px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            box-sizing: border-box;
+        }
+
+        /* Profile Picture */
+        #profile {
+            width: 220px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 4px solid white;
+        }
+
+        /* Creator Information */
+        #info {
+            flex: 1;
+            color: rgb(7, 20, 123);
+        }
+
+        #info h3 {
+            font-size: 27px;
+            margin: 0 0 5px;
+        }
+
+        #info h4 {
+            font-size: 17px;
+            margin: 0 0 15px;
+            color: rgb(7, 20, 123);
+        }
+
+        #info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        /* Small Information Box */
+        .details {
+            background-color: white;
+            padding: 12px 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+
+        .details p {
+            margin: 5px 0;
+            font-size: 15px;
+        }
+
+        /* Closing Message */
+        #message {
+            background-color: rgba(240, 239, 239, 0.9);
+            color: rgb(7, 20, 123);
+            width: 700px;
+            max-width: 95%;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Footer */
+        footer {
+            background-color: white;
+            color: rgba(7, 20, 123, 0.9);
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <ul>
+        <li><a href="members.html"><b>Club Members List</b></a></li>
+        <li><a href="index.html"><b>Member Verification List</b></a></li>
+        <li><a href="locator.html"><b>Non-Metal Elements Locator</b></a></li>
+        <li><a href="creator.html"><u><b>Meet the Creator</b></u></a></li>
+    </ul>
+
+    <div class="main">
+
+        <div id="top">
+            <h2>GET TO KNOW ME!</h2>
+        </div>
+
+        <!-- Creator Profile -->
+        <div id="creator-card">
+
+            <!-- Profile Picture -->
+            <img src="pics/me.jpg" id="profile" alt="My picture">
+
+            <!-- Creator Details -->
+            <div id="info">
+
+                <h3>Julienne Miranda</h3>
+                <h4>STUDENT | WEBSITE CREATOR</h4>
+
+                <div class="details">
+                    <p><b>GRADE & SECTION:</b>10-EMERALD</p>
+                    <p><b>BIRTHDAY:</b> January 22, 2011</p>
+                    <p><b>AGE:</b>15 Years Old</p>
+                    <p><b>HOBBIES:</b> Watching mockumentaries, romance films, and cleaning</p>
+                    <p><b>INTERESTS:</b> Playing volleyball and travelling </p>
+                    <p><b>DREAMS:</b> To study in a good university and to become a medtech</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Quote -->
+        <div id="message">
+            "There are dreamers and there are realists in this world. You would think the dreamers would find the dreamers, and the realists would find the realists, but more often than not, the opposite is true.
+            See, the dreamers need the realists to keep them from soaring too close to the sun. 
+            And the realists?
+            Well, without the dreamers, they might not ever get off the ground." — Cameron Tucker
+        </div>
+
+    </div>
+    <footer>
+        <p>© Julienne Miranda | Project | 2nd Quarter</p>
+    </footer>
+
+</body>
+</html>
